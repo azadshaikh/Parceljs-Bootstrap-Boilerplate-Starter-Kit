@@ -10,7 +10,7 @@ to install dependencies, then
 ```
 npm start
 ```
-to start the local development server.
+to start the local development server. Open http://localhost:1234/html/index.html to view.
 
 To build for production, run
 ```
