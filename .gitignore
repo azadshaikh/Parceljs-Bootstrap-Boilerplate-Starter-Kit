@@ -68,6 +68,7 @@ typings/
 # build dir
 dist/
 build/
+output/
 
 # Parcel cache
 .parcel-cache

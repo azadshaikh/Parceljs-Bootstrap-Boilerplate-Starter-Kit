@@ -8,7 +8,7 @@
     "prestart": "npx rimraf dist",
     "start": "parcel serve src/html/*.html src/assets/* --open",
     "prebuild": "npx rimraf build",
-    "build": "parcel build src/html/*.html src/js/index.js src/scss/index.scss src/assets/* --public-url ../ --experimental-scope-hoisting --out-dir build",
+    "build": "parcel build src/html/*.html src/js/index.js src/scss/index.scss src/assets/* --public-url ../ --experimental-scope-hoisting --out-dir output",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
