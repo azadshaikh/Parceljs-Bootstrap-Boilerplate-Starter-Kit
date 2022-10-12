@@ -6,9 +6,9 @@
   "source": "src/index.html",
   "scripts": {
     "prestart": "npx rimraf dist",
-    "start": "parcel src/*.html --open",
+    "start": "parcel serve src/html/*.html src/assets/* --open",
     "prebuild": "npx rimraf build",
-    "build": "parcel build src/*.html src/js/index.js src/scss/index.scss src/assets/* --public-url ./ --experimental-scope-hoisting --out-dir build",
+    "build": "parcel build src/html/*.html src/js/index.js src/scss/index.scss src/assets/* --public-url ../ --experimental-scope-hoisting --out-dir build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -34,7 +34,6 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.2",
-    "posthtml-doctype": "^1.1.1"
+    "bootstrap": "^5.2.2"
   }
 }

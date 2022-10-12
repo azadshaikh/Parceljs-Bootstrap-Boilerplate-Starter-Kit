@@ -4,6 +4,6 @@
       "sync": true
     },
     "plugins": {
-        "posthtml-include": { "root": "./src"}
+        "posthtml-include": { "root": "./src/html"}
     }
   }
