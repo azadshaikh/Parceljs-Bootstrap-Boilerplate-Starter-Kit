@@ -70,4 +70,5 @@ dist/
 build/
 
 # Parcel cache
-.cache/
+.parcel-cache
+.cache
