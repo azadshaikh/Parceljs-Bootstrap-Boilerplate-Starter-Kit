@@ -1,0 +1,9 @@
+{
+    "root": "./src",
+    "options": {
+      "sync": true
+    },
+    "plugins": {
+        "posthtml-include": { "root": "./src"}
+    }
+  }

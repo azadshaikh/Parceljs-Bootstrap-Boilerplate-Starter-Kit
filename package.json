@@ -1,0 +1,39 @@
+{
+  "name": "parceljs-bootstrap-boilerplate",
+  "version": "1.0.0",
+  "description": "Parcel.js Boilerplate for Bootstrap 5",
+  "main": "src/js/index.js",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel src/*.html --open",
+    "prebuild": "npx rimraf build",
+    "build": "parcel build src/*.html src/js/index.js src/scss/index.scss src/assets/* --public-url ./ --experimental-scope-hoisting --out-dir build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "parcel",
+    "parceljs",
+    "boilerplate",
+    "starter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:azadshaikh/Parceljs-Bootstrap-Boilerplate-Starter-Kit.git"
+  },
+  "author": "Azad Shaikh",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/plugin-transform-runtime": "^7.19.1",
+    "parcel-bundler": "^1.12.5",
+    "posthtml": "^0.16.6",
+    "posthtml-include": "^1.7.4",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.2",
+    "posthtml-doctype": "^1.1.1"
+  }
+}
