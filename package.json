@@ -6,9 +6,10 @@
   "source": "src/index.html",
   "scripts": {
     "prestart": "npx rimraf dist",
-    "start": "parcel serve src/html/*.html src/assets/* --open",
-    "prebuild": "npx rimraf build",
-    "build": "parcel build src/html/*.html src/js/index.js src/scss/index.scss src/assets/* --public-url ../ --experimental-scope-hoisting --out-dir output",
+    "start": "parcel serve src/index.html src/html/*.html src/js/index.js src/scss/index.scss src/assets/* --open",
+    "poststart": "npx rimraf dist",
+    "prebuild": "npx rimraf output",
+    "build": "parcel build src/index.html src/html/*.html src/js/index.js src/scss/index.scss src/assets/* --public-url ../ --experimental-scope-hoisting --out-dir output",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
